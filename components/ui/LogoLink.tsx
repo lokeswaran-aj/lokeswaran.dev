@@ -1,7 +1,7 @@
 import React from "react"
-import { Github, LinkedIn, Resume, Twitter } from "./Icons"
 import { siteConfig } from "@/config/site"
 import Link from "next/link"
+import Icons from "./Icons"
 
 interface LogoLinkProps {
   href: string
@@ -23,12 +23,13 @@ const LogoLink = ({ href, Icon }: LogoLinkProps) => {
 
 const LogoLinks = () => {
   const { links } = siteConfig
+  const { github, twitter, linkedIn, resume } = Icons
   return (
     <div className="flex gap-3">
-      <LogoLink href={links.github} Icon={Github} />
-      <LogoLink href={links.twitter} Icon={Twitter} />
-      <LogoLink href={links.linkedin} Icon={LinkedIn} />
-      <LogoLink href={links.resume} Icon={Resume} />
+      <LogoLink href={links.github} Icon={github} />
+      <LogoLink href={links.twitter} Icon={twitter} />
+      <LogoLink href={links.linkedin} Icon={linkedIn} />
+      <LogoLink href={links.resume} Icon={resume} />
     </div>
   )
 }

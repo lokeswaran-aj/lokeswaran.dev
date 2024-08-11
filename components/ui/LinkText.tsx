@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React from "react"
-import { Arrow } from "./Icons"
+import Icons from "./Icons"
 import { cn } from "@/libs/utils"
 
 type Props = {
@@ -23,7 +23,7 @@ const LinkText = (props: Props) => {
     >
       <span className="block text-sm sm:text-base">
         {text}
-        <Arrow />
+        <Icons.arrow />
       </span>
     </Link>
   )
