@@ -4,6 +4,7 @@ import "./globals.css"
 import { cn } from "@/libs/utils"
 import { siteConfig } from "@/config/site"
 import Header from "@/components/Header"
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -29,6 +30,7 @@ export default function RootLayout({
         <div className="fixed inset-x-0 bottom-0 z-20 mx-auto mb-4 w-screen flex justify-center h-12 px-6">
           <Header />
         </div>
+        <Analytics />
       </body>
     </html>
   )
