@@ -58,11 +58,21 @@ const Hero = () => {
       <div className="mt-14">
         <Heading text="Contact" />
         <p className="text-gray-300">
-          Connect with me on <LinkText href={links.linkedin} text="LinkedIn" />,
-          follow me on <LinkText href={links.twitter} text="X" />, view my code
-          and open-source projects on{" "}
-          <LinkText href={links.github} text="GitHub" />, or email me directly
-          at{" "}
+          Connect with me on{" "}
+          <LinkText
+            href={links.linkedin}
+            text="LinkedIn"
+            className="text-primary"
+          />
+          , follow me on{" "}
+          <LinkText href={links.twitter} text="X" className="text-primary" />,
+          view my code and open-source projects on{" "}
+          <LinkText
+            href={links.github}
+            text="GitHub"
+            className="text-primary"
+          />
+          , or email me directly at{" "}
           <span className="text-primary hover:underline underline-offset-2 cursor-pointer">
             {email}
           </span>
