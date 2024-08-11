@@ -2,9 +2,9 @@ import { siteConfig } from "@/config/site"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import BadgeAnimatedGradientBorder from "./BadgeAnimatedGradientBorder"
-import Arrow from "./Arrow"
-import LinkText from "./LinkText"
+import BadgeAnimatedGradientBorder from "./ui/BadgeAnimatedGradientBorder"
+import Arrow from "./ui/Arrow"
+import LinkText from "./ui/LinkText"
 import Heading from "./ui/Heading"
 
 const Hero = () => {
