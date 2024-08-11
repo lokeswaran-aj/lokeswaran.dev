@@ -21,7 +21,7 @@ const LinkText = (props: Props) => {
         "hover:underline underline-offset-2 inline-block mr-1"
       )}
     >
-      <span className="flex items-center gap-1">
+      <span className="block text-sm sm:text-base">
         {text}
         <Arrow />
       </span>
