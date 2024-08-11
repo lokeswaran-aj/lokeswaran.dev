@@ -1,11 +1,13 @@
-import BackButton from "@/components/BackButton"
+import BackButton from "@/components/ui/BackButton"
+import WorkExperience from "@/components/WorkExperience"
 import React from "react"
 
 const Work = () => {
   return (
-    <div>
+    <section>
       <BackButton link="/" />
-    </div>
+      <WorkExperience />
+    </section>
   )
 }
 
