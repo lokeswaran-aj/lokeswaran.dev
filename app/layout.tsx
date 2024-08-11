@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import { siteConfig } from "@/config/site"
 import Header from "@/components/Header"
 import { Analytics } from "@vercel/analytics/react"
+import Providers from "@/components/Providers"
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -24,13 +25,15 @@ export default function RootLayout({
           GeistSans.className
         )}
       >
-        <div className="flex flex-col py-20 min-h-[calc(100dvh-3rem)]">
-          {children}
-        </div>
-        <div className="fixed inset-x-0 bottom-0 z-20 mx-auto mb-4 w-screen flex justify-center h-12 px-6">
-          <Header />
-        </div>
-        <Analytics />
+        <Providers>
+          <div className="flex flex-col py-20 min-h-[calc(100dvh-3rem)]">
+            {children}
+          </div>
+          <div className="fixed inset-x-0 bottom-0 z-20 mx-auto mb-4 w-screen flex justify-center h-12 px-6">
+            <Header />
+          </div>
+          <Analytics />
+        </Providers>
       </body>
     </html>
   )

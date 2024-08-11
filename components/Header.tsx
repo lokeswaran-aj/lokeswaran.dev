@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import React from "react"
+import ModeToggler from "./ModeToggler"
 
 const Header = () => {
   const pathname = usePathname()
@@ -38,6 +39,7 @@ const Header = () => {
         >
           Blog
         </Link>
+        <ModeToggler />
       </span>
     </div>
   )
