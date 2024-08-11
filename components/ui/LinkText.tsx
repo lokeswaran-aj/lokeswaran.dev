@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React from "react"
-import Arrow from "./Arrow"
+import { Arrow } from "./Icons"
 import { cn } from "@/libs/utils"
 
 type Props = {

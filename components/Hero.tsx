@@ -3,9 +3,9 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import BadgeAnimatedGradientBorder from "./ui/BadgeAnimatedGradientBorder"
-import Arrow from "./ui/Arrow"
 import LinkText from "./ui/LinkText"
 import Heading from "./ui/Heading"
+import LogoLinks from "./ui/LogoLink"
 
 const Hero = () => {
   const {
@@ -30,6 +30,9 @@ const Hero = () => {
         />
         <p className="text-xl font-bold">{name}</p>
         <p className="text-lg font-medium text-gray-300">{role}</p>
+        <div className="mt-3">
+          <LogoLinks />
+        </div>
       </div>
       <div className="mt-14">
         <Heading text="About me" />
