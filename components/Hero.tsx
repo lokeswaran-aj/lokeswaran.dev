@@ -2,7 +2,9 @@ import { siteConfig } from "@/config/site"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import LinkButton from "./LinkButton"
+import BadgeAnimatedGradientBorder from "./BadgeAnimatedGradientBorder"
+import Arrow from "./Arrow"
+import LinkText from "./LinkText"
 
 const Hero = () => {
   const {
@@ -26,57 +28,34 @@ const Hero = () => {
           className="rounded-full mb-3"
         />
         <p className="text-xl font-bold">{name}</p>
-        <p className="text-lg font-medium text-text/70">{role}</p>
+        <p className="text-lg font-medium text-gray-300">{role}</p>
       </div>
       <div className="mt-14">
         <h2 className="mb-4 font-bold">About me:</h2>
-        <div className="text-text/70">
+        <div className="text-gray-300">
           <p>
             I&apos;m a software engineer, ambitious and open source enthusiast.
             I currently work at{" "}
-            <LinkButton
+            <BadgeAnimatedGradientBorder
               href={currentCompanyUrl}
               imageUrl={currentCompanyImage}
               imageAlt={currentCompany}
               text={currentCompany}
-            />
-            , where I build web applications and contribute to open source.
+            />{" "}
+            where I build web applications and contribute to open source.
           </p>
           <p>I am passionate about Web development and Generative AI.</p>
         </div>
       </div>
       <div className="mt-14">
         <h2 className="mb-4 font-bold">Connect:</h2>
-        <p className="text-text/70">
-          Connect with me on{" "}
-          <Link
-            href={links.linkedin}
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-2"
-          >
-            LinkedIn
-          </Link>
-          , follow me on{" "}
-          <Link
-            href={links.twitter}
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-2"
-          >
-            X
-          </Link>
-          , view my code and open-source projects on{" "}
-          <Link
-            href={links.github}
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-2"
-          >
-            Github
-          </Link>
-          , or email me directly at{" "}
-          <span className="underline underline-offset-2 cursor-pointer">
+        <p className="text-gray-300">
+          Connect with me on <LinkText href={links.linkedin} text="LinkedIn" />,
+          follow me on <LinkText href={links.twitter} text="X" />, view my code
+          and open-source projects on{" "}
+          <LinkText href={links.github} text="GitHub" />, or email me directly
+          at{" "}
+          <span className="text-primary hover:underline underline-offset-2 cursor-pointer">
             {email}
           </span>
           .
