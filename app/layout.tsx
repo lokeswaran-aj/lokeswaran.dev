@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans"
 import "./globals.css"
 import { cn } from "@/libs/utils"
 import { siteConfig } from "@/config/site"
+import Header from "@/components/Header"
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -18,11 +19,16 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "antialiased bg-background text-text max-w-2xl mb-40 flex flex-col mx-4 mt-20 sm:mx-auto",
+          "antialiased bg-background text-text max-w-2xl  mx-4 sm:mx-auto",
           GeistSans.className
         )}
       >
-        {children}
+        <div className="flex flex-col py-20 min-h-[calc(100dvh-3rem)]">
+          {children}
+        </div>
+        <div className="fixed inset-x-0 bottom-0 z-20 mx-auto mb-4 w-screen flex justify-center h-12 px-6">
+          <Header />
+        </div>
       </body>
     </html>
   )
