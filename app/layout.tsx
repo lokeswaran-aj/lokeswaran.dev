@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import "./globals.css"
-import { cn } from "@/libs/utils"
+import { cn } from "@/lib/utils"
 import { siteConfig } from "@/config/site"
 import Header from "@/components/Header"
 import { Analytics } from "@vercel/analytics/react"

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import React from "react"
 import Icons from "./Icons"
-import { cn } from "@/libs/utils"
+import { cn } from "@/lib/utils"
 
 type Props = {
   href: string
