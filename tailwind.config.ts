@@ -23,6 +23,8 @@ const config = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       colors: {
+        "dark-secondary": "hsl(var(--dark-secondary))",
+        "dark-accent": "hsl(var(--dark-accent))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

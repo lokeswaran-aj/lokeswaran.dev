@@ -15,12 +15,12 @@ const Experience = (props: IProps) => {
   return (
     <div className="sm:flex flex-row pb-4">
       <div>
-        <p className="text-gray-400 text-sm w-36 mr-4">{period}</p>
+        <p className="text-muted/80 text-sm w-36 mr-4">{period}</p>
       </div>
       <div className="flex-1">
         <div className="mb-4">
           <LinkText href={link} text={name} className="text-base font-medium" />
-          <p className="text-gray-400 text-sm">{location}</p>
+          <p className="text-muted/80 text-sm">{location}</p>
         </div>
         <div className="mb-4">
           <ul className="list-none text-sm ">
@@ -32,7 +32,7 @@ const Experience = (props: IProps) => {
           </ul>
         </div>
         <div className="text-sm">
-          skills: <span className="text-gray-400">{skills}</span>
+          skills: <span className="text-muted/80">{skills}</span>
         </div>
       </div>
     </div>

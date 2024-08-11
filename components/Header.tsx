@@ -14,8 +14,8 @@ const Header = () => {
         <Link
           href="/"
           className={cn(
-            pathname === "/" ? "text-accent" : "",
-            "hover:text-red-light transition"
+            pathname === "/" ? "text-dark-secondary" : "",
+            "hover:text-dark-accent transition-colors"
           )}
         >
           Home
@@ -23,8 +23,8 @@ const Header = () => {
         <Link
           href="/work"
           className={cn(
-            pathname === "/work" ? "text-accent" : "",
-            "hover:text-red-light transition"
+            pathname === "/work" ? "text-dark-secondary" : "",
+            "hover:text-dark-accent transition-colors"
           )}
         >
           Work
@@ -32,8 +32,8 @@ const Header = () => {
         <Link
           href="/blog"
           className={cn(
-            pathname === "/blog" ? "text-accent" : "",
-            "hover:text-red-light transition"
+            pathname === "/blog" ? "text-dark-secondary" : "",
+            "hover:text-dark-accent transition-colors"
           )}
         >
           Blog

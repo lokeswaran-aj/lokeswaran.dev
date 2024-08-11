@@ -30,14 +30,14 @@ const Hero = () => {
           priority
         />
         <p className="text-xl font-bold">{name}</p>
-        <p className="text-lg font-medium text-gray-300">{role}</p>
+        <p className="text-lg font-medium text-muted/80">{role}</p>
         <div className="mt-3">
           <LogoLinks />
         </div>
       </div>
       <div className="mt-14">
         <Heading text="About me" />
-        <div className="text-gray-300">
+        <div className="text-muted/80">
           <p>
             I&apos;m a software engineer, ambitious and open source enthusiast.
             I currently{" "}
@@ -61,7 +61,7 @@ const Hero = () => {
       </div>
       <div className="mt-14">
         <Heading text="Contact" />
-        <p className="text-gray-300">
+        <p className="text-muted/80">
           Connect with me on{" "}
           <LinkText
             href={links.linkedin}
