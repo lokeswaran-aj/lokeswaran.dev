@@ -27,6 +27,7 @@ const Hero = () => {
           height={64}
           alt={name}
           className="rounded-full mb-3"
+          priority
         />
         <p className="text-xl font-bold">{name}</p>
         <p className="text-lg font-medium text-gray-300">{role}</p>
