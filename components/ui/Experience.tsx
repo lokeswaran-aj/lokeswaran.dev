@@ -1,0 +1,42 @@
+import React from "react"
+import LinkText from "./LinkText"
+
+interface IProps {
+  period: string
+  link: string
+  name: string
+  location?: string
+  descriptions: string[]
+  skills: string
+}
+
+const Experience = (props: IProps) => {
+  const { period, link, name, location, descriptions, skills } = props
+  return (
+    <div className="flex flex-row pb-4 ">
+      <div>
+        <p className="text-gray-400 text-sm w-36 mr-4">{period}</p>
+      </div>
+      <div className="flex-1">
+        <div className="mb-4">
+          <LinkText href={link} text={name} className="text-base font-medium" />
+          <p className="text-gray-400 text-sm">{location}</p>
+        </div>
+        <div className="mb-4">
+          <ul className="list-none text-sm ">
+            {descriptions.map((description, index) => (
+              <li className="pb-2" key={index}>
+                {description}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="text-sm">
+          skills: <span className="text-gray-400">{skills}</span>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Experience
