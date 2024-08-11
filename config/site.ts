@@ -27,7 +27,7 @@ export const siteConfig = {
         "Designed and implemented a scalable, secured robust, maintainable infrastructure using Nomad, Consul and Vault in AWS.",
       ],
       skills:
-        "Typescript, NextJS, ReactJS, ExpressJS, PostgreSQL, Python, Kotlin, Springboot, AWS, MedusaJS, Strapi, Docker, Terraform",
+        "Typescript, NextJS, ReactJS, ExpressJS, PostgreSQL, Python, Kotlin, Springboot, AWS, MedusaJS, Strapi, Docker, Terraform, Material UI",
     },
     {
       name: "Software Engineer Intern at Thoughtworks",
@@ -40,6 +40,38 @@ export const siteConfig = {
       ],
       skills:
         "Linux, ReactJS, Java, Springboot, PostgreSQL, SQL, Docker, Apache Superset, AWS, CI/CD",
+    },
+  ],
+  project: [
+    {
+      name: "CurlGPT",
+      link: "https://curlgpt.vercel.app/",
+      period: "May 2023",
+      descriptions: [
+        "Built a CLI tool with typescript and Node.js and published it on the NPM package manager, gaining over 2000+ downloads.",
+        "Leveraged OpenAI's ChatGPT-3.5 API to generate  commands from prompts in the terminal, resulting in efficient development experience.",
+      ],
+      skills: "Typescript, NPM, NodeJS, NextJS, Github Actions, OpenAI",
+    },
+    {
+      name: "Amplication",
+      link: "https://github.com/amplication/amplication/pulls?q=+is%3Apr+author%3Alokeswaran-aj",
+      period: "Feb 2023",
+      descriptions: [
+        "Enhanced the frontend of this open-source project with React, contributing valuable improvements to the user interface and overall user experience.",
+        "Implemented an updated service and project name feature allowing users to instantly make modifications from the home page.",
+      ],
+      skills: "React, Typescript, GraphQL",
+    },
+    {
+      name: "Translation App",
+      link: "https://github.com/lokeswaran-aj/translator",
+      period: "Nov 2022",
+      descriptions: [
+        "Developed a cross-platform Google-like Translation App clone using React Native for the frontend and public API for the backend.",
+        "Supports 100+ languages and incorporates features like history of translations and saved translations.",
+      ],
+      skills: "React Native, Translation API",
     },
   ],
 }

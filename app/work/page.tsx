@@ -1,3 +1,4 @@
+import Project from "@/components/Project"
 import BackButton from "@/components/ui/BackButton"
 import WorkExperience from "@/components/WorkExperience"
 import React from "react"
@@ -7,6 +8,7 @@ const Work = () => {
     <section>
       <BackButton link="/" />
       <WorkExperience />
+      <Project />
     </section>
   )
 }

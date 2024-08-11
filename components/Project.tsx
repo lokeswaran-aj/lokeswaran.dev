@@ -3,13 +3,12 @@ import Heading from "./ui/Heading"
 import { siteConfig } from "@/config/site"
 import Experience from "./ui/Experience"
 
-const WorkExperience = () => {
-  const { work } = siteConfig
+const Project = () => {
   return (
     <div className="flex flex-col items-start justify-start mt-14">
-      <Heading text="Work Experience" />
+      <Heading text="Project" />
       <div className="flex flex-col gap-9">
-        {work.map((item, index) => (
+        {siteConfig.project.map((item, index) => (
           <Experience key={index} {...item} />
         ))}
       </div>
@@ -17,4 +16,4 @@ const WorkExperience = () => {
   )
 }
 
-export default WorkExperience
+export default Project
