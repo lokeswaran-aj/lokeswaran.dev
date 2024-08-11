@@ -31,7 +31,7 @@ const Hero = () => {
         <p className="text-lg font-medium text-gray-300">{role}</p>
       </div>
       <div className="mt-14">
-        <h2 className="mb-4 font-bold">About me:</h2>
+        <h2 className="mb-4 font-bold">About me</h2>
         <div className="text-gray-300">
           <p>
             I&apos;m a software engineer, ambitious and open source enthusiast.
@@ -55,7 +55,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="mt-14">
-        <h2 className="mb-4 font-bold">Connect:</h2>
+        <h2 className="mb-4 font-bold">Connect</h2>
         <p className="text-gray-300">
           Connect with me on <LinkText href={links.linkedin} text="LinkedIn" />,
           follow me on <LinkText href={links.twitter} text="X" />, view my code
