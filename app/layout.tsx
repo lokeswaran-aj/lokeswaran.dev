@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "antialiased bg-background text-text max-w-2xl mb-40 flex flex-col mx-4 mt-10 sm:mx-auto",
+          "antialiased bg-background text-text max-w-2xl mb-40 flex flex-col mx-4 mt-20 sm:mx-auto",
           GeistSans.className
         )}
       >

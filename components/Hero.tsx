@@ -18,7 +18,7 @@ const Hero = () => {
     email,
   } = siteConfig
   return (
-    <section className="">
+    <section>
       <div className="flex flex-col items-center justify-start">
         <Image
           src={myImage}
@@ -35,7 +35,14 @@ const Hero = () => {
         <div className="text-gray-300">
           <p>
             I&apos;m a software engineer, ambitious and open source enthusiast.
-            I currently work at{" "}
+            I currently{" "}
+            <Link
+              href={"/work"}
+              className="text-primary hover:underline underline-offset-2 cursor-pointer"
+            >
+              work
+            </Link>{" "}
+            at{" "}
             <BadgeAnimatedGradientBorder
               href={currentCompanyUrl}
               imageUrl={currentCompanyImage}
