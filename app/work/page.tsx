@@ -7,8 +7,11 @@ const Work = () => {
   return (
     <section>
       <BackButton link="/" />
-      <WorkExperience />
-      <Project />
+      <div className="flex flex-col gap-14">
+        <WorkExperience />
+        <hr />
+        <Project />
+      </div>
     </section>
   )
 }

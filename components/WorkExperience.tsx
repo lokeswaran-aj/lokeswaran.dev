@@ -6,7 +6,7 @@ import Experience from "./ui/Experience"
 const WorkExperience = () => {
   const { work } = siteConfig
   return (
-    <div className="flex flex-col items-start justify-start mt-14">
+    <div className="flex flex-col items-start justify-start">
       <Heading text="Work Experience" />
       <div className="flex flex-col gap-9">
         {work.map((item, index) => (
