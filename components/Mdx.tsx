@@ -31,7 +31,17 @@ function CustomLink(props: any) {
 }
 
 const RoundedImage = (props: ImageProps) => {
-  return <Image className="rounded-lg" {...props} />
+  const { src, alt, width, height, ...restProps } = props
+  return (
+    <Image
+      alt={alt}
+      src={src}
+      width={width}
+      height={height}
+      className="rounded-lg"
+      {...restProps}
+    />
+  )
 }
 
 const slugify = (str: string) => {
@@ -46,7 +56,7 @@ const slugify = (str: string) => {
 }
 
 const createHeading = (level: number) => {
-  return ({ children }: { children: string }) => {
+  const Header = ({ children }: { children: string }) => {
     let slug = slugify(children)
     return React.createElement(
       `h${level}`,
@@ -61,6 +71,7 @@ const createHeading = (level: number) => {
       children
     )
   }
+  return Header
 }
 
 const components = {
