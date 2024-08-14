@@ -1,7 +1,7 @@
 import path from "path"
 import fs from "fs"
 
-export type Metadata = {
+type Metadata = {
   title: string
   description: string
   image?: string
