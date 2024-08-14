@@ -2,6 +2,21 @@ import { HTMLAttributes } from "react"
 
 type IconProps = HTMLAttributes<SVGElement>
 const Icons = {
+  logo: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={30}
+      height={30}
+      stroke="#000"
+      strokeWidth={0.001}
+      aria-hidden="true"
+      className="iconify iconify--emojione-monotone"
+      viewBox="0 0 64 64"
+      {...props}
+    >
+      <path d="M32 2C15.432 2 2 15.432 2 32s13.432 30 30 30 30-13.432 30-30S48.568 2 32 2zm11.275 44.508h-20.55V17.492h6.063v23.799h14.488v5.217z" />
+    </svg>
+  ),
   arrow: (props: IconProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
