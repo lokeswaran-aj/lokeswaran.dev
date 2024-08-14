@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { GeistSans } from "geist/font/sans"
 import "./globals.css"
 import { cn } from "@/lib/utils"
@@ -10,6 +10,16 @@ import Providers from "@/components/Providers"
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_APP_URL ?? siteConfig.links.url
+  ),
+}
+
+const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "blac" },
+  ],
 }
 
 export default function RootLayout({

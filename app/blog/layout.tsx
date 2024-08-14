@@ -3,8 +3,8 @@ import { siteConfig } from "@/config/site"
 import BackButton from "@/components/ui/BackButton"
 
 export const metadata: Metadata = {
-  title: "Blog | " + siteConfig.name,
-  description: "All my blog posts",
+  title: "Blogs",
+  description: "All my blog posts reside here",
 }
 
 export default function BlogLayout({
