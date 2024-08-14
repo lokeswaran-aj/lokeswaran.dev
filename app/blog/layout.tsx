@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { siteConfig } from "@/config/site"
 import BackButton from "@/components/ui/BackButton"
 
 export const metadata: Metadata = {
@@ -12,10 +11,5 @@ export default function BlogLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <section>
-      <BackButton link="/" />
-      {children}
-    </section>
-  )
+  return <section>{children}</section>
 }

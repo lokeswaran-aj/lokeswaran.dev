@@ -1,3 +1,4 @@
+import BackButton from "@/components/ui/BackButton"
 import Heading from "@/components/ui/Heading"
 import getBlogPosts from "@/lib/blog"
 import Link from "next/link"
@@ -6,6 +7,7 @@ export default function Blog() {
   const allBlogs = getBlogPosts()
   return (
     <div>
+      <BackButton link={"/"} />
       <Heading text="Read my blogs" />
       {allBlogs.map((blog) => (
         <Link key={blog.slug} href={`/blog/${blog.slug}`}>
