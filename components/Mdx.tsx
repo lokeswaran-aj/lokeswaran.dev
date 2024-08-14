@@ -60,7 +60,7 @@ const createHeading = (level: number) => {
     let slug = slugify(children)
     return React.createElement(
       `h${level}`,
-      { id: slug },
+      { id: slug, className: "hover:underline underline-offset-2" },
       [
         React.createElement("a", {
           href: `#${slug}`,
