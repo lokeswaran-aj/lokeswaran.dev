@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { siteConfig } from "@/config/site"
 import CustomMDX from "@/components/Mdx"
 import BackButton from "@/components/ui/BackButton"
+import { notFound } from "next/navigation"
 
 type Props = {
   params: { slug: string }
@@ -57,7 +58,7 @@ const BlogPage = (props: Props) => {
   let blog = getBlogPosts().find((blog) => blog.slug === props.params.slug)
 
   if (!blog || !blog.metadata.published) {
-    return null
+    notFound()
   }
   const { title, description, publishedAt, image } = blog.metadata
 
