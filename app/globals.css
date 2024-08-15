@@ -100,7 +100,7 @@
 }
 
 .prose pre {
-  @apply bg-neutral-50 dark:bg-neutral-900 rounded-t-none rounded-b-lg overflow-x-auto;
+  @apply bg-neutral-50 dark:bg-neutral-900 rounded-t-none rounded-b-lg overflow-x-auto font-fira-code;
 }
 
 .prose code {
@@ -175,7 +175,7 @@ h4 {
 }
 
 [data-rehype-pretty-code-title] {
-  @apply bg-[#282c34] text-white font-mono font-bold text-sm px-20 py-2 rounded-t-md relative;
+  @apply bg-[#282c34] text-white font-fira-code font-bold text-base px-20 py-2 rounded-t-md relative;
 }
 
 [data-rehype-pretty-code-title]::before {

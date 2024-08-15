@@ -21,6 +21,7 @@ const config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        "fira-code": ["var(--fira-code)", ...fontFamily.mono],
       },
       colors: {
         "dark-secondary": "hsl(var(--dark-secondary))",
