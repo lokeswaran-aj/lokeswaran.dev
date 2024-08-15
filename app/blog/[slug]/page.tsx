@@ -70,7 +70,7 @@ const BlogPage = (props: Props) => {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "BlogBlogBloging",
+            "@type": "Article",
             headline: title,
             datePublished: publishedAt,
             dateModified: publishedAt,
