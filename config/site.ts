@@ -28,7 +28,7 @@ export const siteConfig = {
         "Designed and implemented a scalable, secured robust, maintainable infrastructure using Nomad, Consul and Vault in AWS.",
       ],
       skills:
-        "Typescript, NextJS, ReactJS, ExpressJS, PostgreSQL, Python, Kotlin, Springboot, AWS, MedusaJS, Strapi, Docker, Terraform, Material UI",
+        "Typescript, NextJS, ReactJS, ExpressJS, PostgreSQL, Python, Springboot, AWS, Docker",
     },
     {
       name: "Software Engineer Intern at Thoughtworks",
@@ -40,7 +40,7 @@ export const siteConfig = {
         "Created custom-crafted SQL query dashboard in Apache Superset to monitor and resolve delivery issues, achieving 60%  success delivery status.",
       ],
       skills:
-        "Linux, ReactJS, Java, Springboot, PostgreSQL, SQL, Docker, Apache Superset, AWS, CI/CD",
+        "ReactJS, Java, Springboot, SQL, Docker, Apache Superset, AWS, CI/CD",
     },
   ],
   project: [
