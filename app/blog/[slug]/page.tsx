@@ -84,7 +84,7 @@ const BlogPage = (props: Props) => {
           }),
         }}
       />
-      <h1 className="title font-medium text-2xl tracking-tighter">{title}</h1>
+      <h1 className="title font-medium text-2xl">{title}</h1>
       <div className="flex items-center mt-2 mb-8 text-sm">
         <Suspense fallback={<p className="h-5" />}>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
@@ -92,7 +92,7 @@ const BlogPage = (props: Props) => {
           </p>
         </Suspense>
       </div>
-      <article className="prose prose-quoteless prose-neutral dark:prose-invert">
+      <article className="prose dark:prose-invert">
         <CustomMDX source={blog.content} />
       </article>
     </section>

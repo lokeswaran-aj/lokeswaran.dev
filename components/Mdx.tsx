@@ -2,6 +2,7 @@ import { MDXRemote } from "next-mdx-remote/rsc"
 import React from "react"
 import Image, { ImageProps } from "next/image"
 import Link from "next/link"
+import rehypePrettyCode, { Options } from "rehype-pretty-code"
 
 const Callout = (props: { emoji: string; children: string }) => {
   return (
@@ -86,15 +87,19 @@ const components = {
   Callout,
 }
 
+const rehypePrettyCodeOptions: Options = {
+  theme: "one-dark-pro",
+}
+
 const CustomMDX = (props: any) => {
   return (
     <MDXRemote
       {...props}
       components={{ ...components, ...(props.components || {}) }}
       options={{
-        // Optionally pass remark plugins
-        remarkPlugins: [],
-        rehypePlugins: [],
+        mdxOptions: {
+          rehypePlugins: [[rehypePrettyCode, rehypePrettyCodeOptions]],
+        },
       }}
     />
   )

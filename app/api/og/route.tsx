@@ -25,7 +25,7 @@ export async function GET(req: NextRequest) {
             <p tw="ml-2 font-bold text-2xl">Lokeswaran Blog</p>
           </div>
           <div tw="flex flex-col flex-1 mt-20">
-            <div tw="flex text-xl uppercase font-bold tracking-tight font-normal">
+            <div tw="flex text-xl uppercase font-bold font-normal">
               BLOG POST
             </div>
             <div tw="flex text-[80px] font-bold text-[50px]">{heading}</div>
