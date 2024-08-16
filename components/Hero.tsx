@@ -6,6 +6,7 @@ import BadgeAnimatedGradientBorder from "./ui/BadgeAnimatedGradientBorder"
 import LinkText from "./ui/LinkText"
 import Heading from "./ui/Heading"
 import LogoLinks from "./ui/LogoLink"
+import Email from "./ui/email"
 
 const Hero = () => {
   const {
@@ -76,11 +77,7 @@ const Hero = () => {
             text="GitHub"
             className="text-primary"
           />
-          , or email me directly at{" "}
-          <span className="text-primary hover:underline underline-offset-2 cursor-pointer">
-            {email}
-          </span>
-          .
+          , or email me directly at <Email />.
         </p>
       </div>
     </section>
