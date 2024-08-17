@@ -10,7 +10,10 @@ import Providers from "@/components/Providers"
 
 const FiraCode = Fira_Code({ subsets: ["latin"], variable: "--fira-code" })
 export const metadata: Metadata = {
-  title: siteConfig.name,
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.author}`,
+  },
   description: siteConfig.description,
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_APP_URL ?? siteConfig.links.url
