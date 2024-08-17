@@ -10,6 +10,9 @@ type Props = {
   params: { slug: string }
 }
 
+export const generateStaticParams = async () => {
+  return getBlogPosts().map((blog) => blog.slug)
+}
 export async function generateMetadata({
   params,
 }: Props): Promise<Metadata | undefined> {
