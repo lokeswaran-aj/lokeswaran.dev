@@ -9,21 +9,48 @@ import { Analytics } from "@vercel/analytics/react"
 import Providers from "@/components/Providers"
 
 const FiraCode = Fira_Code({ subsets: ["latin"], variable: "--fira-code" })
+
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_APP_URL ?? siteConfig.links.url
+  ),
   title: {
     default: siteConfig.name,
     template: `%s | ${siteConfig.author}`,
   },
   description: siteConfig.description,
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_URL ?? siteConfig.links.url
-  ),
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: siteConfig.links.url,
+    siteName: siteConfig.name,
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: siteConfig.name,
+    card: "summary_large_image",
+  },
+  verification: {
+    google: "p1iiyT6ruqWpFWpJlMQzvcSP75S-4eL8eyNZhOT82ww",
+  },
 }
 
-const viewport: Viewport = {
+export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "blac" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
 }
 
