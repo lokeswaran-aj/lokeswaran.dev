@@ -9,7 +9,7 @@ export const siteConfig = {
   currentCompanyUrl: "https://www.thoughtworks.com",
   email: "lokeswaranaruljothy@gmail.com",
   links: {
-    url: "https://lokeswaran.vercel.app",
+    url: "https://lokeswaran.dev",
     resume:
       "https://drive.google.com/file/d/1a6sP_y6cJ4w3dE8x_3OLyVHSOp18EV7V/view",
     github: "https://github.com/lokeswaran-aj",
