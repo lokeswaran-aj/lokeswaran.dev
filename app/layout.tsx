@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/site"
 import Header from "@/components/Header"
 import { Analytics } from "@vercel/analytics/react"
 import Providers from "@/components/Providers"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const FiraCode = Fira_Code({ subsets: ["latin"], variable: "--fira-code" })
 
@@ -76,6 +77,7 @@ export default function RootLayout({
             <Header />
           </div>
           <Analytics />
+          <SpeedInsights />
         </Providers>
       </body>
     </html>
