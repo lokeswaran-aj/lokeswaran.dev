@@ -20,7 +20,7 @@ const Hero = () => {
     email,
   } = siteConfig
   return (
-    <section>
+    <>
       <div className="flex flex-col items-center justify-start">
         <Image
           src={myImage}
@@ -80,7 +80,7 @@ const Hero = () => {
           , or email me directly at <Email />.
         </p>
       </div>
-    </section>
+    </>
   )
 }
 

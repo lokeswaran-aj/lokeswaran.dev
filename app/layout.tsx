@@ -70,9 +70,9 @@ export default function RootLayout({
         )}
       >
         <Providers>
-          <div className="flex flex-col py-20 min-h-[calc(100dvh-3rem)]">
+          <main className="flex flex-col py-20 min-h-[calc(100dvh-3rem)]">
             {children}
-          </div>
+          </main>
           <div className="fixed inset-x-0 bottom-0 z-20 mx-auto mb-4 w-screen flex justify-center h-12 px-6">
             <Header />
           </div>
