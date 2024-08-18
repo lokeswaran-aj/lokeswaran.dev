@@ -19,7 +19,13 @@ export async function GET(req: NextRequest) {
 
     return new ImageResponse(
       (
-        <div tw="flex relative flex-col p-12 w-full h-full items-start text-black bg-white">
+        <div
+          style={{
+            background: "linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%)",
+            backgroundColor: "#A9C9FF",
+          }}
+          tw="flex relative flex-col p-12 w-full h-full items-start text-black"
+        >
           <div tw="flex items-center">
             <Icons.logo />
             <p tw="ml-2 font-bold text-2xl">Lokeswaran Blog</p>
