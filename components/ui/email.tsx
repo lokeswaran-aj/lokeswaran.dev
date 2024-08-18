@@ -8,7 +8,7 @@ import {
 import { siteConfig } from "@/config/site"
 
 const Email = () => {
-  const [tooltipMessage, setTooltipMessage] = useState("Copy")
+  const [tooltipMessage, setTooltipMessage] = useState("Click to Copy")
   const [isTooltipOpen, setIsTooltipOpen] = useState(false)
 
   const handleOnClick = () => {
@@ -21,7 +21,7 @@ const Email = () => {
       <TooltipTrigger
         asChild
         onClick={handleOnClick}
-        onMouseLeave={() => setTooltipMessage("Copy")}
+        onMouseLeave={() => setTooltipMessage("Click to Copy")}
       >
         <button className="text-primary hover:underline underline-offset-2 cursor-pointer">
           {siteConfig.email}
